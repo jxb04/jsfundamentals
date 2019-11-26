@@ -13,3 +13,6 @@ function startCars(car1, car2, car3) {
 
 let carIds = [1, 2, 3];
 startCars(...carIds);
+
+console.log (1 == true);
+console.log (1 === true );
