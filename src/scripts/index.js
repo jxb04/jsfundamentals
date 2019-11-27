@@ -26,3 +26,5 @@ userSettings = { name: 'Joe' };
 defaultSettings = { name: 'Default'};
 
 console.log ( userSettings || defaultSettings );
+
+console.log ( ( 5 > 4 ? 'yes' : 'no') );
