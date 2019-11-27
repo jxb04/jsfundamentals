@@ -16,3 +16,13 @@ startCars(...carIds);
 
 console.log (1 == true);
 console.log (1 === true );
+
+let userSettings = null;
+let defaultSettings = { name: 'Default'};
+
+console.log ( userSettings || defaultSettings );
+
+userSettings = { name: 'Joe' };
+defaultSettings = { name: 'Default'};
+
+console.log ( userSettings || defaultSettings );
