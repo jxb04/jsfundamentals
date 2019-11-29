@@ -28,3 +28,24 @@ defaultSettings = { name: 'Default'};
 console.log ( userSettings || defaultSettings );
 
 console.log ( ( 5 > 4 ? 'yes' : 'no') );
+
+// IIFE immediately invoked function expression
+let app = (function() {
+    let carid = '123';
+    console.log('in function');
+    return {};
+})();
+
+console.log(app);
+
+// closure
+let appClosure = (function() {
+    let carid = '123';
+    let getId = function () {
+        return carid;
+    };
+    return {
+        getId: getId
+    };
+})();
+console.log(appClosure.getId());
