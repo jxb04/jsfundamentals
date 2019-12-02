@@ -72,3 +72,30 @@ let jsonIn =
 let jsonCarIds = JSON.parse(jsonIn);
 console.log(jsonCarIds);
 console.log(JSON.stringify(jsonCarIds));
+
+let carIds6 = [
+    { carid: 123, style: 'sedan'},
+    { carid: 456, style: 'convertible'},
+    { carid: 789, style: 'sedan'}
+];
+
+carIds6.forEach(car => console.log(car));
+
+carIds6.forEach(
+    (car, index) => console.log(car, index)
+);
+
+let convertibles = carIds6.filter(
+    car => car.style === 'convertible'
+);
+console.log(convertibles);
+
+let result = carIds6.every(
+    car => car.carid > 0
+);
+console.log(result);
+
+car = carIds6.find(
+    car => car.carid > 500
+);
+console.log(car);
