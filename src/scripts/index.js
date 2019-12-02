@@ -59,3 +59,16 @@ function Car (id) {
 
 let vehicle = new Car(123);
 vehicle.start();
+
+let jsonIn = 
+`
+    [
+        {"carId": 123},
+        {"carId": 456},
+        {"carId": 789}
+    ]
+`;
+
+let jsonCarIds = JSON.parse(jsonIn);
+console.log(jsonCarIds);
+console.log(JSON.stringify(jsonCarIds));
