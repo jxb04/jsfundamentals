@@ -1,14 +1,15 @@
-class Car {
-    constructor(id) {
-        this.id = id;
+class Vehicle {
+    constructor() {
+        this.type = 'car';
     }
-    identify(suffix) {
-        return `Car.id: ${this.id} ${suffix}`;
+    start() {
+        retrun `Starting: ${this.type}`;
     }
 }
 
-let car = new Car(123);
-console.log(car.id);
-console.log(car.identify('!!!') );
-car.id = 456;
-console.log(car.id);
+class Car extends Vehicle {
+
+}
+
+let car = new Car();
+console.log( car.type );
