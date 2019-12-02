@@ -1,15 +1,4 @@
-class Vehicle {
-    constructor() {
-        this.type = 'car';
-    }
-    start() {
-        retrun `Starting: ${this.type}`;
-    }
-}
+import { Car } from './models/car.js';
 
-class Car extends Vehicle {
-
-}
-
-let car = new Car();
-console.log( car.type );
+let car = new Car(123);
+console.log( car.id );
