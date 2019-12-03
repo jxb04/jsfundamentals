@@ -1,5 +1,6 @@
-import { Car } from './models/car';
- 
-// year = 1956;
+let intervalId = setInterval ( function () {
+    console.log ('1 second passed');
+}, 1000);
 
-console.log(window.innerWidth);
+// if you need to cancel the timer
+//clearInterval(intervalId);
