@@ -1,12 +1,10 @@
-let el = document.getElementById('first');
+try {
+    let car = newCar;
+}
 
-console.log(el);
-
-let els = document.getElementsByClassName('p1');
-
-console.log (els);
-
-let element = document.getElementById('first');
-
-element.textContent = 'New content';
-element.style.color = 'blue';
+catch (error) {
+    console.log('error: ', error);
+}
+finally {
+    console.log('this always executes');
+}
