@@ -1,6 +1,7 @@
-let intervalId = setInterval ( function () {
-    console.log ('1 second passed');
-}, 1000);
+let el = document.getElementById('first');
 
-// if you need to cancel the timer
-//clearInterval(intervalId);
+console.log(el);
+
+let els = document.getElementsByClassName('p1');
+
+console.log (els);
