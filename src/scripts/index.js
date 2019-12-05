@@ -1,1 +1,1 @@
-window.foo = 'secret code';
+console.log('Hello world');
